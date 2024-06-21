@@ -1,0 +1,45 @@
+<div class="filter-container">
+    <h3>FILTERS</h3>
+    <div class="filter-group">
+        <label>
+            <select class="filter-option" [(ngModel)]="filters.movie" (change)="onFiltersChange()">
+                <option value="" class="filter-option"> Movie Name:</option>
+                <option *ngFor="let movie of movies" [value]="movie.url">{{ movie.title }}</option>
+            </select>
+        </label>
+    </div>
+    <div class="filter-group">
+        <label>
+            <select class="filter-option" [(ngModel)]="filters.species" (change)="onFiltersChange()">
+                <option value="">Species:</option>
+                <option *ngFor="let specie of species" [value]="specie.url">{{ specie.name }}</option>
+            </select>
+        </label>
+    </div>
+    <div class="filter-group">
+        <label>
+            <select class="filter-option" [(ngModel)]="filters.vehicle" (change)="onFiltersChange()">
+                <option value="">Species:</option>
+                <option *ngFor="let vehicle of vehicles" [value]="vehicle.url">{{ vehicle.name }}</option>
+            </select>
+        </label>
+    </div>
+    <div class="filter-group">
+        <label>
+            <select class="filter-option" [(ngModel)]="filters.starship" (change)="onFiltersChange()">
+                <option value="">Species:</option>
+                <option *ngFor="let starship of starships" [value]="starship.url">{{ starship.name }}</option>
+            </select>
+        </label>
+    </div>
+    <div class="filter-group">
+        <label>
+
+            <select class="filter-option" [(ngModel)]="filters.birthYear" (change)="onFiltersChange()">
+                <option value="">Birth Year:</option>
+                <option *ngFor="let year of birthYears" [value]="year">{{ year }}</option>
+            </select>
+        </label>
+    </div>
+    <button (click)="onFiltersChange()">SEARCH</button>
+</div>

@@ -1,0 +1,29 @@
+.filter-option {
+    font-size: 15px;
+    line-height: 0.7;
+    font-weight: bold;
+    font-family: Cursive;
+    color: #4cb391;
+    background-color: #e7e3e3;
+
+}
+
+.filter-group {
+    margin-bottom: 10px;
+    /* Optional: Adds spacing between filter groups */
+}
+
+.filter-option {
+    width: 100%;
+    /* Optional: Makes select element full width */
+    padding: 8px;
+    /* Optional: Adjust padding for select element */
+    border: none;
+    /* Removes default border from select */
+    border-radius: 5px;
+    /* Adds border-radius to select */
+    outline: none;
+    /* Optional: Removes outline on focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Adds shadow for better visual */
+}

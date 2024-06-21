@@ -1,1 +1,174 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #BEBEBE;
+}
+
+.container {
+    /* width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px; */
+}
+
+.header {
+    background-color: #4cb391;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3.5em;
+    margin-left: 5rem;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1em;
+    margin-top: 23px;
+    margin-right: 5rem;
+}
+
+.content {
+    display: flex;
+    padding: 50px 100px 0 100px;
+}
+
+.filter-container {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    /* margin-top: 3rem; */
+    background-color: #f1f1f1;
+    height: 30rem;
+}
+
+.filter-container h3 {
+    margin-top: 0;
+    color: #4cb391;
+    text-align: center;
+}
+
+.filter-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.filter-container select,
+.filter-container input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.filter-container button {
+    width: 100%;
+    padding: 10px;
+    color: #4cb391;
+    border: 2px solid #4cb391;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bolds;
+}
+
+.filter-container button:hover {
+    background-color: #BEBEBE;
+}
+
+.search-results {
+    flex: 3;
+    padding: 20px 50px;
+    background-color: #f1f1f1;
+    margin-left: 25px;
+
+    /* margin-top: 3rem; */
+}
+
+.search-results h2 {
+    margin-top: 0;
+    color: #4cb391;
+}
+
+.search-results h5 {
+    margin-top: 0;
+    color: #797575;
+}
+
+
+.search-results table {
+    width: 100%;
+    /* border-collapse: collapse;  */
+    margin-top: 20px;
+    border-spacing: 0 5px;
+}
+
+.search-results table th,
+.search-results table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: #cfcece;
+    color: #797575;
+    height: 2rem;
+    text-align: center;
+    font-family: Cursive;
+}
+
+.search-results table th {
+    background-color: #f1f1f1;
+
+}
+
+.search-results table td a {
+    /* color: #008744; */
+    text-decoration: none;
+}
+
+.search-results table td a:hover {
+    text-decoration: underline;
+}
+
+/* Existing styles... */
+
+.pagination {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination button[disabled] {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    margin: 0 10px;
+}
+
+.pagination button.active {
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+
+.pagination button:disabled {
+    background-color: #4cb391;
+    cursor: not-allowed;
+}

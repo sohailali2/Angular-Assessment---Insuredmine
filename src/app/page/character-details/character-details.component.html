@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="header">
+        <h1>STAR WARS</h1>
+        <p>THE SWAPI PROJECT</p>
+    </div>
+
+
+
+
+    <div class="content" *ngIf="character">
+        <div class="filter-container">
+            <div class="imgi-container">
+                <img src="assets/images-removebg-preview.png" alt="Character Image" class="character-image"
+                    style="width: 186px;">
+            </div>
+            <div class="detail">
+                <p style="font-weight: bolder;">Name: {{ character.name }}</p>
+                <p>SkywalkerBorn: {{ character.birth_year }}</p>
+                <p>Gender: {{ character.gender }}</p>
+                <p>Height: {{ character.height }}cm</p>
+                <p>Weight: {{ character.mass }}kg</p>
+                <p>Hair color: {{ character.hair_color }}</p>
+                <p>Eye color: {{ character.eye_color }}</p>
+                <p>Skin color: {{ character.skin_color }}</p>
+
+                <p style="font-weight: bolder; margin-top: 2rem;">Planet Name: {{ planetName || 'Unknown' }}</p>
+                <p style="font-weight: bolder; margin-top: 2rem;">Species:{{ speciesNames.join(', ') || 'Unknown' }}</p>
+            </div>
+
+        </div>
+        <div class="search-results">
+            <div class="details-container">
+                <div class="section">
+                    <h2>FILMS</h2>
+                    <ul class="card">
+                        <div class="content1">
+                            <p *ngFor="let film of movieTitles">{{ film }} </p>
+                        </div>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>VEHICLES</h2>
+                    <ul class="card">
+                        <p *ngFor="let vehicle of vehicleNames">{{ vehicle }}</p>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h2>STARSHIPS</h2>
+                    <ul class="card">
+                        <p *ngFor="let starship of starshipNames">{{ starship }}</p>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
